@@ -2,18 +2,7 @@
 <html lang="en">
 <head>
   <title>Animals</title>
-  <style>
-    
-    tr:nth-child(even)
-    {
-      background-color: darkslategray;
-      color:cornflowerblue;
-    }
-    td:hover
-    {
-      color: red;
-    }
-  </style>
+  
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
@@ -59,10 +48,10 @@
           <img src="elephant.jpg" class="img-thumbnail" alt="Elephant image" height="360" width="360">
           <img src="rabbit.jpg" class="img-thumbnail" alt="Rabbit image" height="360" width="360">
         </div> 
-        <table class="table" style="border: 1px solid coral">
-          <caption style="color: darkcyan;font-family: monospace; ">Table of cars and cities.</caption>
-          <thead style="background-color: darkolivegreen;">
-            <tr>
+        <table class="table table-hover table table-dark table-striped table-bordered caption-top border border-dark border border-3">
+          <caption class="text-danger"><b><h4>Animals Places and Cars </h4></b></caption>
+          <thead>
+            <tr class="table-danger">
               <th scope="col"><b>s.no</b></th>
               <th scope="col"><b>Animal</b></th>
               <th scope="col"><b>City</b></th>
@@ -70,37 +59,37 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
+            <tr class="table-success">
               <td scope="row">V</td>
               <td>Vulture</td>
               <td>Vilnius</td>
               <td>Volkswagen</td>
             </tr>
-            <tr>
+            <tr class="table-info">
               <td scope="row">E</td>
               <td>Elephant</td>
               <td>Essen</td>
               <td>Evans</td>
             </tr>
-            <tr>
+            <tr class="table-primary">
               <td scope="row">E</td>
               <td>Eastern Gorilla</td>
               <td>Essen</td>
               <td>Elio</td>
             </tr>
-            <tr>
+            <tr class="table-secondary">
               <td scope="row">R</td>
               <td>Rabbit</td>
               <td>Reno</td>
               <td>Renault</td>
             </tr>
-            <tr>
+            <tr class="table-danger">
               <td scope="row">A</td>
               <td>Antelope</td>
               <td>Arlington</td>
               <td>Aixam</td>
             </tr>
-            <tr>
+            <tr class="table-info">
               <td scope="row">V</td>
               <td>Vampire Bat</td>
               <td>Vilnius</td>
@@ -108,6 +97,26 @@
             </tr>
           </tbody>
         </table>
+        <nav class="navbar navbar-light" style="background-color:gainsboro">     
+          <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with letters from last name">
+          <div class="btn" role="group">
+          <div class="btn-group" role="group" aria-label="Group with images found">
+          <button type="button" class="btn btn-success">V</button>
+          <button type="button" class="btn btn-success">E</button>
+          <button type="button" class="btn btn-success">E</button>
+          </div>
+          <div class="btn-group" role="group" aria-label="Group with alert warning">
+          <button type="button" class="btn btn-warning">R</button>
+          <button type="button" class="btn btn-warning">A</button>
+          </div>
+          <div class="btn-group" role="group" aria-label="Group with Danger section">
+          <button type="button" class="btn btn-danger">V</button>
+          </div>
+          </div>
+          </div>
+          </nav>
+          
+     
 
 </body>
 </html>
