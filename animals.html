@@ -2,6 +2,18 @@
 <html lang="en">
 <head>
   <title>Animals</title>
+  <style>
+    
+    tr:nth-child(even)
+    {
+      background-color: darkslategray;
+      color:cornflowerblue;
+    }
+    td:hover
+    {
+      color: red;
+    }
+  </style>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
@@ -47,7 +59,55 @@
           <img src="elephant.jpg" class="img-thumbnail" alt="Elephant image" height="360" width="360">
           <img src="rabbit.jpg" class="img-thumbnail" alt="Rabbit image" height="360" width="360">
         </div> 
-
+        <table class="table" style="border: 1px solid coral">
+          <caption style="color: darkcyan;font-family: monospace; ">Table of cars and cities.</caption>
+          <thead style="background-color: darkolivegreen;">
+            <tr>
+              <th scope="col"><b>s.no</b></th>
+              <th scope="col"><b>Animal</b></th>
+              <th scope="col"><b>City</b></th>
+              <th scope="col"><b>Car</b></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td scope="row">V</td>
+              <td>Vulture</td>
+              <td>Vilnius</td>
+              <td>Volkswagen</td>
+            </tr>
+            <tr>
+              <td scope="row">E</td>
+              <td>Elephant</td>
+              <td>Essen</td>
+              <td>Evans</td>
+            </tr>
+            <tr>
+              <td scope="row">E</td>
+              <td>Eastern Gorilla</td>
+              <td>Essen</td>
+              <td>Elio</td>
+            </tr>
+            <tr>
+              <td scope="row">R</td>
+              <td>Rabbit</td>
+              <td>Reno</td>
+              <td>Renault</td>
+            </tr>
+            <tr>
+              <td scope="row">A</td>
+              <td>Antelope</td>
+              <td>Arlington</td>
+              <td>Aixam</td>
+            </tr>
+            <tr>
+              <td scope="row">V</td>
+              <td>Vampire Bat</td>
+              <td>Vilnius</td>
+              <td>Vega</td>
+            </tr>
+          </tbody>
+        </table>
 
 </body>
 </html>
